@@ -1,0 +1,32 @@
+<html>
+
+<script src="mathcontext.js" type="text/javascript"></script>
+<script src="bigdecimal.js" type="text/javascript"></script>
+<script src="bignumber.js" type="text/javascript"></script>
+<script src="_tools.js" type="text/javascript"></script>
+
+<body>
+
+<script type="text/javascript">
+
+var result=0;
+var start = new BigDecimal("1");
+var two = new BigDecimal("2");
+
+for(i=0;i<1000;i++) {
+ start=start.multiply(two);
+}
+
+var array = start.toString().split("");
+
+for( var index in array ) {
+  result+=parseInt(array[index]);
+}
+
+console.log(result);
+
+
+
+</script>
+</body>
+</html>
