@@ -1,0 +1,47 @@
+<html>
+<body>
+<script type="text/javascript">
+
+function bolen(sayi){
+	var dizi = new Array;
+	var toplam = 0;
+	var sonuc= 0;
+	var j=0;
+	for (i=1; i<sayi; i++){
+		if (sayi%i==0){
+			dizi[j]=sayi/i;
+			j++;}}
+	for (k=0; k<dizi.length; k++){
+		toplam+=Number(dizi[k]);}
+	sonuc=toplam+1-sayi;
+	if(sonuc!=1 && sonuc!=sayi){
+		return sonuc;
+			}}
+
+function work(){
+var sayi =new Array;
+var index = new Array;
+var topla=0;
+var temporary=0;
+for(i=0; i<10000; i++) {
+	sayi[i]=bolen(i);
+ 	var index = i;
+}
+for(m=0; m<index; m++){
+	temporary=sayi[m];
+	if (temporary != undefined){
+		if (temporary < 10000){
+			if (m==sayi[temporary]){
+				topla+=m;
+				document.write(m+"+"+ "\n");
+			}
+		}
+	}}
+document.write("toplam:" + topla);
+
+}
+work()
+
+</script>
+</body>
+</html>
