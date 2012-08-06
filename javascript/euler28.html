@@ -1,0 +1,32 @@
+<html>
+<body>
+<script type="text/javascript">
+
+function diagonals(){
+	bir=0;
+	iki=0;
+
+	// kosegenlerin formulize hali
+	//	#~ kuzeydogu=Math.pow(x,2)
+	//	#~ kuzeybati=(Math.pow(x,2))-x+1
+	//	#~ guneydogu=(Math.pow(x,2))-(3*x)+3
+	//	#~ guneybati=(Math.pow(x,2))-(2*x)+2
+	//	#~ toplam= 4*Math.pow(x,2) -(6*x) - 6
+
+	for(i=3; i<1002; i+=2){
+		j=Math.pow(i,2);
+		bir+=j;
+		iki+=i;}
+	birinci=bir*4
+	ikinci=iki*6
+	ucuncu=6*500;
+	document.write(birinci-ikinci+ucuncu+1);
+}
+
+diagonals()
+</script>
+</body>
+</html>
+
+		
+		
