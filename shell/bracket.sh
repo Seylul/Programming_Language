@@ -16,4 +16,4 @@ do
 echo $month $day $time $user  
 done </home/User/backup
 ## IFS - Internal field separator is used for seperate fields according to space in syslog's backup file. 
-I need just timestamp and username for now
+##I need just timestamp and username for now
