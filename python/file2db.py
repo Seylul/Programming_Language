@@ -23,7 +23,7 @@ def insertinto():
 	#Here is sql query. Populate the data's in Employee table.
 	return sql
 
-def connectinsert():
+def connectdb():
 
 	db = MySQLdb.connect("localhost","root","passwd","TESTDB" )
 	# Open database connection
@@ -47,4 +47,4 @@ def connectinsert():
 	db.close()
 	# disconnect from server
 
-connectinsert()
+connectdb()
