@@ -1,4 +1,4 @@
-def fib():
+def even_fib():
 	artis,toplam,sayi=1,0,0
 	while True:
 		sayi=sayi+artis
