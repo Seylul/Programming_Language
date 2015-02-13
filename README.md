@@ -1,3 +1,2 @@
   
-
- Burada çeşitli programlama dillerinden parça kodlarımı tutuyorum.
+I keep little scripts from various programming languages in here.
